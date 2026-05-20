@@ -107,7 +107,8 @@ Developer → GitHub → Jenkins Pipeline → Docker Build → Kubernetes Deploy
 ---
 
 ## 🔹 Application Running
-<img width="1330" alt="App Running" src="screenshots/app.png">
+<img width="2560" height="1553" alt="image" src="https://github.com/user-attachments/assets/5df51471-7d1d-4b4e-aacc-9040f4c482fd" />
+
 
 ---
 
