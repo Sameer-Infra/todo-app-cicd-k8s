@@ -80,34 +80,34 @@ Developer → GitHub → Jenkins Pipeline → Docker Build → Kubernetes Deploy
 # 📸 Screenshots
 
 ## 🔹 Jenkins Pipeline Success
-![Jenkins](screenshots/jenkins.png)
+<img width="1330" alt="Jenkins Pipeline Success" src="screenshots/jenkins.png">
 
 ---
 
 ## 🔹 Kubernetes Pods
-![Pods](screenshots/pods.png)
+<img width="1330" alt="Kubernetes Pods" src="screenshots/pods.png">
 
 ---
 
 ## 🔹 Kubernetes Deployments
-![Deployments](screenshots/deployments.png)
+<img width="1330" alt="Kubernetes Deployments" src="screenshots/deployments.png">
 
 
 ---
 
 ## 🔹 Horizontal Pod Autoscaler
-![HPA](screenshots/hpa.png)
+<img width="1330" alt="HPA" src="screenshots/hpa.png">
 
 ---
 
 ## 🔹 RBAC Configuration
-![RBAC](screenshots/rbac.png)
+<img width="1330" alt="RBAC Config" src="screenshots/rbac.png">
 
 
 ---
 
 ## 🔹 Application Running
-![App](screenshots/app.png)
+<img width="1330" alt="App Running" src="screenshots/app.png">
 
 ---
 
