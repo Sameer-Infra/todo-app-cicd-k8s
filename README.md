@@ -1,61 +1,169 @@
-# Example to-do List Application
+# 🚀 Todo-App-CICD-K8s
 
-This repository is a simple to-do list manager that runs on Node.js.
+A production-ready DevOps project demonstrating deployment of a Dockerized Todo Application on Kubernetes with complete CI/CD automation using Jenkins.
 
-## Getting started
+---
 
-Download [Docker Desktop](https://www.docker.com/products/docker-desktop) for Mac or Windows. Docker Compose will be automatically installed. 
-On Linux, make sure you have the latest version of [Compose](https://docs.docker.com/compose/install/).
+# 📖 Project Description
 
-## Clone the repository
+This project showcases how a containerized Node.js Todo application can be deployed and managed in a Kubernetes cluster with advanced DevOps practices such as:
 
-Open a terminal and clone this sample application.
+✅ CI/CD Automation using Jenkins  
+✅ Kubernetes Deployments & Services  
+✅ RBAC Authorization  
+✅ Horizontal Pod Autoscaler (HPA)  
+✅ Persistent Volume Claims (PVC)  
+✅ Docker Containerization  
 
-```
- git clone https://github.com/dockersamples/todo-list-app
-```
+---
 
-## Run the app
+# 🛠️ Tech Stack
 
-Navigate into the todo-list-app directory:
+| Tool | Purpose |
+|------|----------|
+| Docker | Containerization |
+| Kubernetes | Container Orchestration |
+| Jenkins | CI/CD Pipeline |
+| Node.js | Backend Application |
+| YAML | Kubernetes Configurations |
 
-```
-docker compose up -d --build
-```
+---
 
-When you run this command, you should see an output like this:
-
-```
-[+] Running 4/4
-✔ app 3 layers [⣿⣿⣿]      0B/0B            Pulled           7.1s
-  ✔ e6f4e57cc59e Download complete                          0.9s
-  ✔ df998480d81d Download complete                          1.0s
-  ✔ 31e174fedd23 Download complete                          2.5s
-[+] Running 2/4
-  ⠸ Network todo-list-app_default           Created         0.3s
-  ⠸ Volume "todo-list-app_todo-mysql-data"  Created         0.3s
-  ✔ Container todo-list-app-app-1           Started         0.3s
-  ✔ Container todo-list-app-mysql-1         Started         0.3s
-```
-
-## List the services
-
-```
-docker compose ps
-NAME                    IMAGE            COMMAND                  SERVICE   CREATED          STATUS          PORTS
-todo-list-app-app-1     node:18-alpine   "docker-entrypoint.s…"   app       24 seconds ago   Up 7 seconds    127.0.0.1:3000->3000/tcp
-todo-list-app-mysql-1   mysql:8.0        "docker-entrypoint.s…"   mysql     24 seconds ago   Up 23 seconds   3306/tcp, 33060/tcp
-```
-
-If you look at the Docker Desktop GUI, you can see the containers and dive deeper into their configuration.
+# 🏗️ Kubernetes Architecture
 
 
+Developer → GitHub → Jenkins Pipeline → Docker Build → Kubernetes Deployment
 
 
-<img width="1330" alt="image" src="https://github.com/dockersamples/todo-list-app/assets/313480/d85a4bcf-e2c3-4917-9220-7d9b9a78dc54">
+---
+
+# Todo-App-CICD-K8s/
+│
+├── app/                         # Application code (Node.js / Flask etc.)
+│   ├── app.js
+│   └── package.json
+│
+├── k8s/                         # Kubernetes manifests
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── hpa.yaml
+│   ├── pvc.yaml
+│   └── rbac/
+│       ├── role.yaml
+│       ├── role-binding.yaml
+│       └── serviceaccount.yaml
+│
+├── Jenkinsfile                 # CI/CD pipeline definition
+├── Dockerfile                  # Container build file
+│
+├── screenshots/                # Project outputs
+│   ├── jenkins.png
+│   ├── pods.png
+│   ├── services.png
+│   ├── hpa.png
+│   └── app.png
+│
+└── README.md
+
+---
+
+# ⚡ CI/CD Workflow
+
+1️⃣ Developer pushes code to GitHub  
+2️⃣ Jenkins pipeline triggers automatically  
+3️⃣ Docker image gets built  
+4️⃣ Kubernetes deployment updates automatically  
+5️⃣ Application scales using HPA  
+
+---
+
+# 📸 Screenshots
+
+## 🔹 Jenkins Pipeline Success
+![Jenkins](screenshots/jenkins.png)
+
+---
+
+## 🔹 Kubernetes Pods
+![Pods](screenshots/pods.png)
+
+---
+
+## 🔹 Kubernetes Deployments
+![Deployments](screenshots/deployments.png)
 
 
-## Access the app
+---
 
-The to-do list app will be running at [http://localhost:3000](http://localhost:3000).
+## 🔹 Horizontal Pod Autoscaler
+![HPA](screenshots/hpa.png)
 
+---
+
+## 🔹 RBAC Configuration
+![RBAC](screenshots/rbac.png)
+
+
+---
+
+## 🔹 Application Running
+![App](screenshots/app.png)
+
+---
+
+# ⚙️ Kubernetes Commands
+
+## Apply Configurations
+
+
+kubectl apply -f .
+
+
+## Check Pods
+
+
+kubectl get pods
+
+
+## Check Services
+
+
+kubectl get svc
+
+
+## Check Deployments
+
+
+kubectl get deployments
+
+
+## Check HPA
+
+
+kubectl get hpa
+
+
+---
+
+# 🔐 RBAC Implementation
+
+RBAC was configured to manage secure access control inside the Kubernetes cluster using:
+
+- Roles
+- RoleBindings
+- Service Accounts
+
+---
+
+# 📈 Future Enhancements
+
+- Helm Charts
+- Prometheus Monitoring
+- Grafana Dashboards
+- ArgoCD GitOps
+- Ingress Controller
+
+---
+
+
+# ⭐ If you liked this project, give it a star!
