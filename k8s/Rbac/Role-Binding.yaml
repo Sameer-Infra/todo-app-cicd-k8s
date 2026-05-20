@@ -1,0 +1,15 @@
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: todo-rolebinding
+  namespace: todo-app
+
+subjects:
+- kind: Serviceaccount
+  name: admin-user
+  apiVersion: v1
+
+roleRef:
+- kind: Role
+  apiVersion: rbac.autorization.k8s.io/v1
+  name: manager
