@@ -1,3 +1,13 @@
+ ## 👨‍💻 Author
+
+ 
+ # Sameer | 👨‍💻☸️ DevOps & Agentic Ai Engineer 🤖☁️ (Aspiring)
+
+ 
+# Project: Todo-App-CICD-K8s using jenkins on kubernetes.
+
+
+
 # 🚀 Todo-App-CICD-K8s
 
 A production-ready DevOps project demonstrating deployment of a Dockerized Todo Application on Kubernetes with complete CI/CD automation using Jenkins.
@@ -37,35 +47,78 @@ Developer → GitHub → Jenkins Pipeline → Docker Build → Kubernetes Deploy
 
 ---
 
-# Todo-App-CICD-K8s/
+
+.📁 Project Structure
+├── k8s/
+│   ├── k8s-Rbac/
+│   ├── k8s-ConfigMap.yaml
+│   ├── k8s-Deployment.yaml
+│   ├── k8s-Hpa.yaml
+│   ├── k8s-Ingress.yaml
+│   ├── k8s-Namespace.yaml
+│   ├── k8s-Secret.yaml
+│   └── k8s-Service.yaml
 │
-├── app/                         # Application code (Node.js / Flask etc.)
-│   ├── app.js
-│   └── package.json
+├── app/
+│   ├── src/
+│   ├── spec/
+│   ├── package.json
+│   ├── yarn.lock
 │
-├── k8s/                         # Kubernetes manifests
-│   ├── deployment.yaml
-│   ├── service.yaml
-│   ├── hpa.yaml
-│   ├── pvc.yaml
-│   └── rbac/
-│       ├── role.yaml
-│       ├── role-binding.yaml
-│       └── serviceaccount.yaml
+├── docker/
+│   └── Dockerfile
 │
-├── Jenkinsfile                 # CI/CD pipeline definition
-├── Dockerfile                  # Container build file
+├── compose.yaml
+├── screenshots/
 │
-├── screenshots/                # Project outputs
-│   ├── jenkins.png
-│   ├── pods.png
-│   ├── services.png
-│   ├── hpa.png
-│   └── app.png
-│
-└── README.md
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+---
+
+
+
+# 📸 Screenshots
+
+## 🔹 Jenkins Pipeline Success
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/ef05b7ab-add4-40ee-bd08-f93759e3bb15" />
+
 
 ---
+
+## ## 🔹 Application Running
+<img width="2560" height="1553" alt="image" src="https://github.com/user-attachments/assets/5df51471-7d1d-4b4e-aacc-9040f4c482fd" />
+
+---
+
+## 🔹 Kubernetes Pods
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/fbafa21a-0fd7-4482-bffb-d7d46ecd8120" />
+
+---
+
+## 🔹 Kubernetes Deployments
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/9e98c783-2aca-40d5-9f7a-e192c7d90a5e" />
+
+---
+
+## 🔹 Horizontal Pod Autoscaler
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/93cf27da-57be-4bd2-ae5b-99df5adfcc52" />
+
+
+---
+
+## 🔹 RBAC Configuration
+
+# ROLE 
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/02344548-08a4-4eaa-87d4-69ad995cf8c0" />
+
+
+---
+
+
+# Kubernetes Service
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/45d7ae77-4dc8-4cce-9f71-f61affa11bfe" />
+
 
 # ⚡ CI/CD Workflow
 
@@ -74,74 +127,6 @@ Developer → GitHub → Jenkins Pipeline → Docker Build → Kubernetes Deploy
 3️⃣ Docker image gets built  
 4️⃣ Kubernetes deployment updates automatically  
 5️⃣ Application scales using HPA  
-
----
-
-# 📸 Screenshots
-
-## 🔹 Jenkins Pipeline Success
-<img width="1330" alt="Jenkins Pipeline Success" src="screenshots/jenkins.png">
-
----
-
-## 🔹 Kubernetes Pods
-<img width="1330" alt="Kubernetes Pods" src="screenshots/pods.png">
-
----
-
-## 🔹 Kubernetes Deployments
-<img width="1330" alt="Kubernetes Deployments" src="screenshots/deployments.png">
-
-
----
-
-## 🔹 Horizontal Pod Autoscaler
-<img width="1330" alt="HPA" src="screenshots/hpa.png">
-
----
-
-## 🔹 RBAC Configuration
-<img width="1330" alt="RBAC Config" src="screenshots/rbac.png">
-
-
----
-
-## 🔹 Application Running
-<img width="2560" height="1553" alt="image" src="https://github.com/user-attachments/assets/5df51471-7d1d-4b4e-aacc-9040f4c482fd" />
-
-
----
-
-# ⚙️ Kubernetes Commands
-
-## Apply Configurations
-
-
-kubectl apply -f .
-
-
-## Check Pods
-
-
-kubectl get pods
-
-
-## Check Services
-
-
-kubectl get svc
-
-
-## Check Deployments
-
-
-kubectl get deployments
-
-
-## Check HPA
-
-
-kubectl get hpa
 
 
 ---
